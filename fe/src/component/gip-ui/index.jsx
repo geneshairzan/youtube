@@ -16,6 +16,7 @@ import DTFilter from "./datatables/filter";
 import Modal from "./modal";
 import ObjectRender from "./objectRender";
 import Avatar from "./avatar";
+import Icon from "./icons";
 
 import { search, order } from "./datatables/helper";
 
@@ -52,6 +53,7 @@ const UI = {
   Chip,
   Grid,
   Avatar,
+  Icon,
 };
 
 export default UI;

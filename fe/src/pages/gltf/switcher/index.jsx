@@ -17,7 +17,6 @@ export default function App() {
     bottom: 0,
     glasses: 0,
     top: 0,
-    hair: 0,
     footware: 0,
   });
   return (

@@ -10,18 +10,10 @@ export default function App(props) {
       }}
     >
       <Test />
-      <Test2 />
-      <Test />
-      <Test />
-      <Test />
     </div>
   );
 }
 
 function Test(params) {
-  return <>something</>;
-}
-
-function Tes2(tparams) {
-  return <>something</>;
+  return <>404. Not Found</>;
 }

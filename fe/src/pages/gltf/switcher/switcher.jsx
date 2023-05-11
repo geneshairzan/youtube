@@ -7,7 +7,6 @@ export default function App({ onChange }) {
         position: "absolute",
         width: "100%",
         display: "flex",
-        width: "100%",
         minHeight: 200,
         bottom: 0,
         padding: "64px",

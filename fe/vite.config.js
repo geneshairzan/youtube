@@ -4,6 +4,9 @@ import mkcert from "vite-plugin-mkcert";
 import { splitVendorChunkPlugin } from "vite";
 import path from "path";
 import { VitePWA } from "vite-plugin-pwa";
+import svgr from "vite-plugin-svgr";
+// import { NodeGlobalsPolyfillPlugin } from "@esbuild-plugins/node-globals-polyfill";
+import nodePolyfills from "vite-plugin-node-stdlib-browser";
 
 export default ({ mode }) => {
   return defineConfig({
@@ -21,7 +24,9 @@ export default ({ mode }) => {
         "@context": path.resolve(__dirname, "./src/component/context"),
       },
     },
+
     plugins: [
+      svgr(),
       react(),
       mkcert(),
       splitVendorChunkPlugin(),
@@ -32,7 +37,9 @@ export default ({ mode }) => {
           enabled: true,
         },
       }),
+      nodePolyfills(),
     ],
+
     build: {
       rollupOptions: {
         output: {

@@ -12,6 +12,7 @@ export default function App(props) {
         },
       }}
     >
+      {console.log("gip")}
       <C1>
         <C2 />
       </C1>

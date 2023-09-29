@@ -10,8 +10,26 @@ import UI from "@component/gip-ui";
 const datas = [
   {
     year: "2023",
+    title: "Compound Coffe Plantion",
+    subtitle: "Tree adoption program",
+    sector: "Private",
+    stacks: "React, Laravel, MySql",
+    modules: "undisclosed (yes)",
+    link: "#",
+  },
+  {
+    year: "2023",
     title: "KDigital",
     subtitle: "Metaverse 3D avatar configurator",
+    sector: "Private",
+    stacks: "React, Laravel, MySql",
+    modules: "undisclosed (yes)",
+    link: "#",
+  },
+  {
+    year: "2023",
+    title: "MyGank",
+    subtitle: "Community Social Media",
     sector: "Private",
     stacks: "React, Laravel, MySql",
     modules: "undisclosed (yes)",
@@ -131,15 +149,15 @@ const datas = [
     modules: "Register, Order, Payment (Stripe), Tracking, Reporting, JNE Integration",
     link: "https://shipmybox.sg/",
   },
-  {
-    year: "2021",
-    title: "Helloha",
-    subtitle: "Tourism Experience booking system",
-    sector: "Private Sector. Tourism.",
-    stacks: "Laravel, MySql, Nginx",
-    modules: "Register, Order, Payment (ipaymu), Tracking, Reporting",
-    link: "https://helloha.app/",
-  },
+  // {
+  //   year: "2021",
+  //   title: "Helloha",
+  //   subtitle: "Tourism Experience booking system",
+  //   sector: "Private Sector. Tourism.",
+  //   stacks: "Laravel, MySql, Nginx",
+  //   modules: "Register, Order, Payment (ipaymu), Tracking, Reporting",
+  //   link: "https://helloha.app/",
+  // },
   {
     year: "2021",
     title: "Maju Bersama Logam",
@@ -159,7 +177,7 @@ export default function CRecentProejct({ isPrinting = false }) {
         RECENT PROJECT
       </UI.Text>
       {datas
-        .filter((d) => d.maincon == "ara")
+        // .filter((d) => d.maincon == "ara")
         .map((d) => (
           <Card
             year={d.year}

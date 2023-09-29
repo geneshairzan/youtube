@@ -10,14 +10,14 @@ export default function App(props) {
 
   React.useEffect(() => {
     if (isprinted) {
-      setisLoading(true);
-      window.scrollTo(0, 0);
-      print({
-        title: "MYLEAD Test Result",
-      }).then((e) => {
-        setisLoading(false);
-        // setmobileDisplay("none");
-      });
+      // setisLoading(true);
+      // window.scrollTo(0, 0);
+      // print({
+      //   title: "MYLEAD Test Result",
+      // }).then((e) => {
+      //   setisLoading(false);
+      //   // setmobileDisplay("none");
+      // });
     }
   }, [isprinted]);
 
@@ -80,8 +80,7 @@ function Left(params) {
         2011 – 2012. PT. IBM Indonesia. GTS – TSS – I/T Specialist
         <br /> 2012 – 2013. PT. IBM Indonesia. GTS – TSS – Sales Specialist
         <br /> 2013 – Present. Alpha Dsign. Founder.
-        {/* <br /> 2020 – Present. GeneshaDev. Founder. */}
-        <br /> 2020 – Present. PT Ara Sukses Sejahter. Head of Engineering.
+        <br /> 2020 – Present. GeneshaDev. Founder.
       </UI.Text>
 
       <UI.Text variant="body1" color="cv.red" bold pt={2}>
@@ -133,8 +132,8 @@ function Right(params) {
         SKILLSET & TECHNOLOGY
       </UI.Text>
       <UI.Text variant="body2">
-        HTML | CSS | PHP | Javascript | C# | C++ | ThreeJS | React Fiber | Node | Express | Bootstrap | Msysl | Mongo |
-        AWS | Linux | Nginx |
+        HTML | CSS | PHP | Javascript | C# | C++ | ThreeJS | React Fiber | Node | Express | Bootstrap | Mysql | Mongo |
+        AWS | Linux | Nginx | Jenkins | Docker
       </UI.Text>
       <Recent />
     </UI.Col>

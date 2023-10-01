@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useSample from "@component/useSample";
-import useArray from "gh-usearray";
+import useSample from "@component/useArray";
+// import useArray from "gh-usearray";
 import UI from "@component/gip-ui";
 import TextField from "@mui/material/TextField";
 
